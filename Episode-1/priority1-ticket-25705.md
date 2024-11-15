@@ -14,7 +14,7 @@ to string interpolation.
 
 The ticket wants to receive a stringified query with:
 
-* Correct quoting (rinchiuso tra apici)
+* Correct quoting (properly enclosed in quotes)
 * Type adaptation (convert the data according to their specific type: Python : None -> SQL: NULL )
 
 ### Example
