@@ -42,7 +42,7 @@ converted to the databases expected type, such as `"date_joined" > '2023-11-16 0
 
 1. [The original request](https://code.djangoproject.com/ticket/25705#comment:5) was to be able to do the following:
    ```
-   sql=str(MyModel.objects.all().query)
+   sql = str(MyModel.objects.all().query)
    raw_qs = MyModel.objects.raw(sql)
    ```
 2. [Alex determined](https://code.djangoproject.com/ticket/25705#comment:12) that it would be
@@ -59,7 +59,6 @@ converted to the databases expected type, such as `"date_joined" > '2023-11-16 0
    - [Alex agreed](https://code.djangoproject.com/ticket/25705#comment:17)
    - There's some uncertainity around [how to handle a `executed_query`](https://code.djangoproject.com/ticket/25705#comment:18)
     when a `QuerySet` hasn't been evaluated yet.
-   - Carlton and Mariusz reviewed the ticket, but didn't call out `QuerySet.executed_query`
 5. [Alex drafts a PR with a solution](https://code.djangoproject.com/ticket/25705#comment:22)
    along the following lines, any further discussion is on the PR.
    > ... the flow is something like
