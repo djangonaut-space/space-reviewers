@@ -4,4 +4,4 @@ Our goal here is to prove that everyone is capable of providing a beneficial cod
 
 ### Suggest a PR to the Space reviewers
 You can submit a pull request for Django that you think is suitable for an online review.
-FIll this [form](https://docs.google.com/forms/d/1ZvNXMbQIv7Z-7Djk1jDM5wZSQe88cLpR8GBxyYXx4TA/prefill)
+Fill out this [form](https://forms.gle/7EZn4E2qEbkkTYUC8)
