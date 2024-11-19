@@ -85,3 +85,41 @@ Two other important topics were discussed in the Trac thread:
 * Another concern is related with sql injection if the `sql.Query.__str__` perform improper quoting. Once this anti-pattern is supported, people will use it and it'll need to be permanently supported. [comment13](https://code.djangoproject.com/ticket/25705#comment:13)
 
 
+### Topics discussed in the chat: 
+
+1. **Logging QuerySet:**
+Logging every query executed by a QuerySet was discussed as a potential feature. However, there are some considerations to note:
+
+>*Alex:*
+> 
+>I can see the logging every query the queryset make being a possibility.
+>Some notes I'd have are:
+>- If the queryset is evaluated multiple times, does each time get added to the list
+>- The implementation gets complicated, since in the case of 5 prefetch you have to pick the last 5 executed queries.
+
+2. **Naming: `query` or `queries`:**
+The choice of names for properties like `executed_query` is important to ensure they align with what users expect, especially when dealing with multiple queries.
+
+>*Sarah:*
+> 
+>So with the prefetch thought, let's say we want these queries later. Would `executed_query` still make sense? Or base_query or would we need to deprecate it for a list? I think strategic names should make this clear
+> [..]
+> 
+>*Alex:*
+> 
+>I like the executed_base_query idea in case of a future executed_queries
+
+
+3. **Handling None QuerySets:**
+The `none` case needs consideration. This point was a key to our review:
+
+>*Sage:*
+> 
+>What happens with MyModel.objects.none()?
+>
+> [..]
+> 
+>*Alex:*
+> 
+>Yeah, it's resetted on an evaluation that goes to database, so it doesn't handle the none() case. 
+>I didn't think of none() at all.
