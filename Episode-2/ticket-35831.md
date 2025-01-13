@@ -5,7 +5,7 @@
 - Date: [2024-12-03 5pm UTC](https://time.is/compare/1700_3_December_2024_UTC)
 - Ticket: [#35831](https://code.djangoproject.com/ticket/35831)
 - PR: [#18699](https://github.com/django/django/pull/18699)
-- Stream: Live at https://www.youtube.com/@djangonautspace
+- Stream: [https://youtube.com/live/J8kio5fY1Pw](https://youtube.com/live/J8kio5fY1Pw)
 
 ## Problem
 
