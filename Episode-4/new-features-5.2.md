@@ -22,7 +22,7 @@ This warning can be hide adding this environment variable:
 HIDE_PRODUCTION_WARNING=true
 ```
 
-### `HttResponse.text`
+### `HttpResponse.text`
 This new string `HttpResponse.text` will substitute the earlier representation of `HttpResponse.content` and will be decoded to UTF-8 by default.
 
 ### Automatic model import in the shell
