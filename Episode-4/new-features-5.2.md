@@ -23,7 +23,7 @@ HIDE_PRODUCTION_WARNING=true
 ```
 
 ### `HttResponse.text`
-This new string `HttResponse.text` will substitute the earlier representation of `HttpResponse.content` and will be decoded to UTF-8 by default.
+This new string `HttpResponse.text` will substitute the earlier representation of `HttpResponse.content` and will be decoded to UTF-8 by default.
 
 ### Automatic model import in the shell
 Every time the shell will be open will automatically import all the models, even from the apps listed in `INSTALLED_APPS`.
