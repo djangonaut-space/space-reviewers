@@ -2,8 +2,8 @@
 
 ## Details
 
-- Date: TBD
-- Stream: TBD
+- Date: [2025-03-11 3pm UTC](https://time.is/compare/1500_11_March_2025_UTC)
+- Stream: Live at https://www.youtube.com/@djangonautspace
 
 ### Documentation
 [Django 5.2 Release notes](https://docs.djangoproject.com/en/dev/releases/5.2/)
