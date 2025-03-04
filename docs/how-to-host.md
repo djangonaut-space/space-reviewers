@@ -4,6 +4,10 @@ This document contains the information needed to host a Space Reviewers
 episode. All permissions to accounts are managed by the Djangonaut Space
 admins teams via 1password.
 
+## Your Audience
+People can join the Zoom chat (audio and text) only after receiving the invitation. 
+The live on YouTube channel is open to everyone.
+
 ## When date and PR is settled on
 
 1. Create episode notes
