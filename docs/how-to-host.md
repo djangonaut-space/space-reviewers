@@ -24,10 +24,10 @@ The live on YouTube channel is open to everyone.
 ```
 The next 🚀 Space Reviewers 👾 streams Sunday, Jan 12 at 4pm UTC!
 
-If you'd like to join us in Zoom, you can register below:
-- https://forms.gle/9DsLc2LDf6qS4BGg7
 - https://time.is/compare/1600_12_January_2025_UTC
 - Episode notes: https://github.com/djangonaut-space/space-reviewers/blob/main/Episode-3/ticket-26739.md
+
+#Django #Python
 
 Space Reviewers is an online Code Review where we show our process step by step. Our goal here is to prove that everyone is capable of providing a beneficial code review regardless of their experience level!
 ```
@@ -56,7 +56,7 @@ Use somewhere else and share the zoom link.
 ```
 🚀 Space Reviewers 👾 - Episode 4
 
-**This event is optional for Djangonauts.** All episodes are recorded and available at https://www.youtube.com/@djangonautspace
+**This event is optional for Djangonauts.** All episodes are recorded and available at https://www.youtube.com/@djangonautspace Please do not feel obligated to join.
 
 **Please do not share this zoom link outside of the community**, others should watch the steam on YouTube instead.
 
@@ -106,5 +106,5 @@ The next 🚀 Space Reviewers 👾 streams Tuesday, March 11th at 3pm UTC! Watch
 
 Sign up for the next one at: https://forms.gle/9DsLc2LDf6qS4BGg7
 
-#Django
+#Django #Python
 ```
