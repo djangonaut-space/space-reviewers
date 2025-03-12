@@ -47,4 +47,25 @@ The method `check()` inspect the entire Django program for potential problem.
 Now this new method `get_check_kwargs()` can be overridden in custom command to supplied `check()` new values and control the running of system checks.
 
 
+### Episode notes
+We receive lots of interesting suggestions from the audience, in particular from Baptiste, thank you so much.
 
+1. Import in shell - when you want a customized behavior you're going to use `get_auto_imports`. But did you know that was renamed in 5.2a1 as `get_namespaces`?
+    ```python
+    from django.core.management.commands import shell
+    
+    
+    class Command(shell.Command):
+        def get_auto_imports(self):
+            return super().get_auto_imports() + [
+                "django.urls.reverse",
+                "django.urls.resolve",
+            ]
+    ```
+2. This is the [PR](https://github.com/django/django/commit/2ce4545de1791d6ed2405cb0657401e179bc5357#diff-47bba021b3e59f7fa8780295371d9a995dfbb832bbbd94cea4a859c51ae4542e) fot the new method `BaseCommand.get_check_kwargs()`
+3. You can use the check command on a specific app, or a particular category using the flag `--tag` 
+    ```
+    django-admin check --tag models --tag compatibility
+    ```
+    for more information see the [check command documentation.](https://docs.djangoproject.com/en/5.1/ref/django-admin/#cmdoption-check-tag)
+4. Here's a [list of tags](https://docs.djangoproject.com/en/5.1/ref/checks/#builtin-tags) for Django's system check
