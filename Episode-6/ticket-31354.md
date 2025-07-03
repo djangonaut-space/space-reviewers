@@ -28,8 +28,8 @@ server{
 ## Summarized issue discussion
 
 [First approach](https://github.com/django/django/pull/12550) was made by **dgcgh** to modify `get_host()` to include the port when it's not the default one.
-`X-Forwarded-Host` already contains a port so it shoulden't attach `X-Forwarded-Port` so [apollo13 suggested](https://github.com/django/django/pull/12550#discussion_r391258985) if in the settings if the option `USE_X_FORWARDED_PORT`
-is true and the host already contains a port throws an error.
+`X-Forwarded-Host` already contains a port, so it shouldn't attach `X-Forwarded-Port`, so [apollo13 suggested](https://github.com/django/django/pull/12550#discussion_r391258985) to throw an error if the settings `USE_X_FORWARDED_PORT` 
+is `True` and the forwarded host already contains a port.
 [felixxm agreed](https://github.com/django/django/pull/12550#issuecomment-598687597) on having both supported `USE_X_FORWARDED_HOST` and `USE_X_FORWARDED_PORT`.
 
 [The next approach](https://github.com/django/django/pull/12844) was made by **apollo13** by creating a new function `_parsed_host_header()`
@@ -38,7 +38,7 @@ The current [PR](https://github.com/django/django/pull/18835) is following the p
 
 ## Appendix
 ### Documentation
-[Nginx configuration](https://nginx.org/en/docs/http/ngx_http_v3_module.html)
+[Nginx's configuration](https://nginx.org/en/docs/http/ngx_http_v3_module.html)
 [HttpRequest.get_port()](https://docs.djangoproject.com/en/5.2/ref/request-response/#django.http.HttpRequest.get_port)
 [USE_X_FORWARDED_HOST](https://docs.djangoproject.com/en/5.2/ref/settings/#use-x-forwarded-host)
 [USE_X_FORWARDED_PORT](https://docs.djangoproject.com/en/5.2/ref/settings/#use-x-forwarded-port)
