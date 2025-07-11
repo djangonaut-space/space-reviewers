@@ -18,7 +18,8 @@ The live on YouTube channel is open to everyone.
 5. Create social media posts on typefully
 6. Create Djangonaut Space discord event
 7. Create events in Django Discords
-8. Update forum thread
+8. Let Jeff Triplett know (if it can be included in the newsletter that goes out Friday's at ~10am UTC)
+9. Update forum thread
 
 ### Social media template
 ```
