@@ -5,7 +5,7 @@
 - Date: [2025-07-12 4.30pm UTC](https://time.is/compare/1630_12_July_2025_in_UTC)
 - Ticket: [#31354](https://code.djangoproject.com/ticket/31354)
 - PR: [#18835](https://github.com/django/django/pull/18835)
-- Stream: TBD
+- Stream: [YouTube video](https://www.youtube.com/watch?v=vuehKySWKxc&list=PLMg7ba4NN6N86bKijkhq42jA-SHBmCEAe)
 
 ## Problem
 
