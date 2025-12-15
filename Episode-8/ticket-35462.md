@@ -4,7 +4,7 @@
 
 - Ticket: [#35462](https://code.djangoproject.com/ticket/35462)
 - PR: [#19406](https://github.com/django/django/pull/19406)
-- Stream: YouTube
+- Stream: [YouTube](https://youtube.com/@djangonautspace)
 
 ## Problem
 
