@@ -1,5 +1,5 @@
 # Space Reviewers 👾
-Space Reviewers is an online Code Review where we show our process step by step.
+Space Reviewers is an online [Code Review of the Django framework](https://docs.djangoproject.com/en/dev/internals/contributing/triaging-tickets/#reviewing-patches) where we show our process step by step.
 Our goal here is to prove that everyone is capable of providing a beneficial code review regardless of their experience level!
 
 ## Join us during our live!
